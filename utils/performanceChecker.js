@@ -22,9 +22,9 @@ function measurePerformance(func, ...args) {
     heapUsed: memoryAfter.heapUsed - memoryBefore.heapUsed, // Actual heap usage
   };
 
-  console.log(`Execution Time: ${executionTime.toFixed(2)} ms`);
-  console.log(`Memory Used (rss): ${(memoryUsed.rss / 1024).toFixed(2)} KB`);
-  console.log(`Memory Used (heapUsed): ${(memoryUsed.heapUsed / 1024).toFixed(2)} KB`);
+  // console.log(`Execution Time: ${executionTime.toFixed(2)} ms`);
+  // console.log(`Memory Used (rss): ${(memoryUsed.rss / 1024).toFixed(2)} KB`);
+  // console.log(`Memory Used (heapUsed): ${(memoryUsed.heapUsed / 1024).toFixed(2)} KB`);
 
   return { executionTime, memoryUsed, result };
 }
