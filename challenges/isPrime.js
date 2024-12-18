@@ -11,7 +11,7 @@ function isPrime(num) {
   if (num % 2 === 0 || num % 3 === 0) return false; // Exclude multiples of 2 and 3.
 
   // Efficient prime check using numbers up to the square root of num.
-  for (let i = 5; i*i < num; i += 1) {
+  for (let i = 5; i < num; i += 1) {
     if (num % i === 0) return false;
   }
 
