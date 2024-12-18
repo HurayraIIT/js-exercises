@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 import measurePerformance from "../utils/performanceChecker";
 import isPrime from "../challenges/isPrime";
 
-test.describe("isPrime", () => {
+test.describe("Accuracy Tests For Prime Checker", () => {
   test("should return true for 2", async () => {
     expect.soft(isPrime(2)).toBe(true);
   });
@@ -48,7 +48,7 @@ test.describe("isPrime", () => {
   });
 });
 
-test.describe("Multiple Prime Time Efficiency Tests", () => {
+test.describe("Multiple Primes - Time Efficiency Tests", () => {
   const largeNumbers = [999983, 9999991, 1000037, 1000039, 100000007];
 
   for (const num of largeNumbers) {
